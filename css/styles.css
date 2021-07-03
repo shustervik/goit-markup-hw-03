@@ -390,9 +390,11 @@ img {
 .projects .item .card {
   border: 1px solid var(--border-color);
   border-top: 1px solid transparent;
+  padding: 20px 24px;
+  /* outline: 2px solid tomato; */
 }
 .projects .title {
-  margin-top: 20px;
+  margin: 0;
   margin-bottom: 4px;
   color: var(--title-text-color);
   font-weight: 700;
