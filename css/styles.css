@@ -43,9 +43,11 @@ body {
   padding-right: 15px;
   /* outline: 2px solid tomato; */
 }
+header {
+  border-bottom: 1px solid var(--header-border-color);
+}
 header .container {
   display: flex;
-  border-bottom: 1px solid var(--header-border-color);
 }
 /* logo*/
 .logo,
@@ -70,7 +72,7 @@ header .container {
   /* outline: 2px solid tomato; */
 }
 .logo {
-  padding-right: 92px;
+  margin-right: 92px;
 }
 /* main-nav */
 .main-nav {
@@ -91,16 +93,16 @@ header .container {
   /* outline: 2px solid tomato; */
 }
 .site-nav .item {
-  padding-right: 50px;
+  margin-right: 50px;
 }
 .site-nav .item:last-child {
-  padding-right: 0;
+  margin-right: 0;
 }
 .auth-nav .item {
-  padding-right: 50px;
+  margin-right: 50px;
 }
 .auth-nav .item:last-child {
-  padding-right: 0;
+  margin-right: 0;
 }
 .site-nav .link {
   display: block;
@@ -140,7 +142,7 @@ img {
 .hero-title {
   margin-top: 0;
   margin-bottom: 30px;
-  padding-top: 200px;
+  padding: 0;
   color: var(--secondary-color);
   font-weight: 900;
   font-size: 44px;
@@ -150,6 +152,7 @@ img {
   /* outline: 2px solid tomato; */
 }
 .hero {
+  padding-top: 200px;
   min-height: 600px;
   background-color: var(--dark-bg-color);
   /* outline: 2px solid tomato; */
@@ -189,7 +192,7 @@ img {
   text-align: center;
   /* outline: 2px solid tomato; */
 }
-.section .container {
+.skills-section {
   padding-top: 94px;
   padding-bottom: 94px;
   /* outline: 2px solid tomato; */
@@ -205,7 +208,7 @@ img {
 }
 .skills .title {
   margin: 0;
-  padding-bottom: 10px;
+  margin-bottom: 10px;
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 14px;
@@ -247,7 +250,7 @@ img {
 .work .item {
   margin-left: 30px;
 }
-.work-section .container {
+.work-section {
   padding-bottom: 94px;
   /* outline: 2px solid tomato; */
 }
@@ -255,8 +258,9 @@ img {
 .team-section {
   background-color: var(--secondary-bg-color);
 }
-.team-section .container {
+.team-section {
   padding-top: 94px;
+  padding-bottom: 94px;
 }
 .team {
   display: flex;
@@ -264,7 +268,6 @@ img {
   margin: 0;
   margin-left: -30px;
   padding: 0;
-  padding-bottom: 94px;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
@@ -273,13 +276,17 @@ img {
 }
 .team .item {
   margin-left: 30px;
+  width: 270px;
   background-color: var(--secondary-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
+.name {
+  padding: 30px 0;
+}
 .team .title {
-  margin-top: 30px;
+  margin: 0;
   margin-bottom: 10px;
   color: var(--title-text-color);
   font-size: 16px;
@@ -287,23 +294,23 @@ img {
   /* outline: 2px solid tomato; */
 }
 .team p {
-  margin-top: 0px;
-  margin-bottom: 30px;
+  margin: 0px;
 }
 /* footer */
 .footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: var(--dark-bg-color);
   /* outline: 2px solid tomato; */
 }
 .footer .container {
-  padding-top: 60px;
   background-color: var(--dark-bg-color);
   /* outline: 2px solid tomato; */
 }
 /* address */
 .address {
   padding: 0;
-  padding-top: 20px;
+  margin-top: 20px;
   color: var(--secondary-color);
   font-family: inherit;
   font-style: inherit;
@@ -313,10 +320,8 @@ img {
   list-style: none;
   padding: 0;
   margin: 0;
+  margin-top: 9px;
   /* outline: 2px solid tomato; */
-}
-.auth .item {
-  padding-top: 9px;
 }
 .address .link {
   color: rgba(255, 255, 255, 0.6);
@@ -328,13 +333,20 @@ img {
   color: var(--accent-color);
   /* outline: 2px solid tomato; */
 }
+.auth .item:last-child {
+  margin-top: 9px;
+}
 /* портфолио*/
-
+.portfolio-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .portfolio {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   margin: 0;
+  margin-left: -8px;
   padding: 0;
   list-style: none;
   /* outline: 2px solid tomato; */
@@ -368,16 +380,19 @@ img {
 .projects {
   display: flex;
   flex-wrap: wrap;
-  margin: 0;
   margin-top: 50px;
+  margin-right: 0;
   margin-left: -30px;
+  margin-bottom: -30px;
   padding: 0;
   list-style: none;
   /* outline: 2px solid tomato; */
 }
 .projects .item {
   margin-left: 30px;
-  padding-bottom: 20px;
+  margin-bottom: 30px;
+  width: 370px;
+  /* outline: 2px solid tomato; */
 }
 .projects .item .card {
   border: 1px solid var(--border-color);
